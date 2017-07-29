@@ -10,7 +10,7 @@
 	<script type="text/javascript" src='js/jquery-3.2.1.min.js'></script>
 	<script type="text/javascript" src='js/Set_sail.js'></script>
 	<script type="text/javascript" src='bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
-	<script type="text/javascript" src="basic./js/swiper.min.js"></script>
+	<script type="text/javascript" src="basic/js/swiper.min.js"></script>
 </head>
 <body>
 
@@ -27,32 +27,89 @@
 		</div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul id="category" class="nav navbar-nav navbar-right">
-				<li id="" role="presentation"><a href="#a1">Set sail</a></li>
-				<li id="" role="presentation"><a href="#a2">我的作品</a></li>
-				<li id="" role="presentation"><a href="#a3">牛文分享</a></li>
-				<li id="" role="presentation"><a href="#a4">HTML5/CSS3</a></li>
-				<li id="" role="presentation"><a href="#a5">最新资讯</a></li>
-				<li id="" role="presentation"><a href="#a6">聘用我</a></li>
+				<li id="SetSail" role="presentation"><a href="#a1">Set sail</a></li>
+				<li id="MyWork" role="presentation"><a href="#a2">我的作品</a></li>
+				<li id="CattleSharing" role="presentation"><a href="#a3">牛文分享</a></li>
+				<li id="H5_S3" role="presentation"><a href="#a4">HTML5/CSS3</a></li>
+				<li id="LatestInformation" role="presentation"><a href="#a5">最新资讯</a></li>
+				<li id="HirMe" role="presentation"><a href="#a6">聘用我</a></li>
 			</ul>
 			<div id="Title_Underline"></div>
-	    </div>
+	    </div>	
 	</div>
 </nav>
-<div class="container">
-	<div class="swiper-container">
-	  <div class="swiper-wrapper">
-	    <div class="swiper-slide blue-slide">slider1</div>
-	    <div class="swiper-slide red-slide">slider2</div>
-	    <div class="swiper-slide orange-slide">slider3</div>
-	    <div class="swiper-slide orange-slide">slider4</div>
-	  </div>
-	  <div class="swiper-pagination"></div>
-	  <div class="swiper-button-prev"></div>
-	  <div class="swiper-button-next"></div>
-	</div>
+
+<div class="swiper-container banner">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide SetSail">
+		<div class="container">
+			<div class="swiper-container case">
+			  <div class="swiper-wrapper">
+			    <div class="swiper-slide">slider1</div>
+			    <div class="swiper-slide">slider2</div>
+			    <div class="swiper-slide">slider3</div>
+			    <div class="swiper-slide">slider4</div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			  <div class="swiper-button-prev"></div>
+			  <div class="swiper-button-next"></div>
+			</div>
+		</div>
+    </div>
+    <div class="swiper-slide MyWork">slider2</div>
+    <div class="swiper-slide CattleSharing">slider3</div>
+    <div class="swiper-slide H5_S3">slider4</div>
+    <div class="swiper-slide LatestInformation">slider5</div>
+    <div class="swiper-slide HirMe">slider6</div>
+  </div>
 </div>
 
 
+
+
+<audio id="audio" src="mp3/Two Steps From Hell - Victory.mp3"></audio>
+<div class="bottom navbar-fixed-bottom">
+	<div class="buttom_background"></div>
+	<div class="locking"></div>
+	<div id="w">
+		<div class="Pp_button">
+			<div class="Previous_song" name="上一首(Shift+←)"></div>
+			<div class="Play_pause" name="播放/暂停(p)"></div>
+			<div class="Next_song" name="下一首(Shift+→)"></div>
+		</div>
+		<div class="Head_portrait">
+			<img src="http://p1.music.126.net/qpvBqYIqkRhO9Ry2qOCdJQ==/2942293117852634.jpg?param=34y34">
+			<a href="#"></a>
+		</div>
+		<div class="Song_information">
+			<a href="#" class="singer">演员</a>
+			<a href="#" class="Song_MV"></a>
+			<a href="#" class="Song_name">薛之谦</a>
+			<a href="#" class="singer_link"></a>
+		</div>
+		<div class="Time_bar">
+			<div class="Cache_bar"></div>
+			<div class="Progress_bar">
+				<i class="Progress_point"></i>
+			</div>
+		</div>
+		<span class="When_long">
+			<em>00:00</em>
+			/ 
+			<span>00:00</span>
+		</span>
+		<div class="Set_operation">
+			<div class="Volume_block">
+				<div class="Volume_bar">
+					<div class="Volume_size">
+						<i class="Volume_point"></i>
+					</div>
+				</div>
+			</div>
+			<div class="volume"></div>
+		</div>
+	</div>
+</div>
 
 
 </body>
