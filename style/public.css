@@ -36,12 +36,12 @@ html,body,.banner{
 	border: none;
 }
 #Title a{
-	color: #000;
+	color: #555;
 }
 #Title_Underline{
 	width: auto;
 	height: 1px;
-	background: #000;
+	background: #555;
 	margin-top: 40px;
 	transition: 0.3s;
 	position: fixed;
@@ -70,20 +70,134 @@ html,body,.banner{
 .SetSail .container{
 	position: relative;
 }
-.SetSail h1{
+.l_div{
+	position: relative;
+	left: 0;
+}
+.l_div h1{
 	position: absolute;
 	left: 0;
 	top: 150px;
 }
-.SetSail p{
+.l_div p{
 	width: 450px;
 	font-size: 17px;
 	line-height: 25px;
 	position: absolute;
 	left: 0;
-	top: 300px;
+	top: 320px;
 	text-align: left;
 	text-indent:30px;
+}
+.l_div_lt{
+	position: absolute;
+	left: 0;
+	top: 600px;
+}
+.l_div_rt{
+	position: absolute;
+	left: 250px;
+	top: 600px;
+}
+.r_div{
+	position: absolute;
+	right: 0;
+	width: 700px;
+	height: 700px;
+}
+.r_div_Title{
+	position: relative;
+}
+.r_div_Title>h1{
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%)
+}
+.r_div_Title>span{
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	transform: translate(-50%);
+	line-height: 100%;
+	font-size: 18px;
+}
+.r_div_Title>div{
+	width: 100%;
+	height: 1px;
+	background: #555;
+	position: absolute;
+	top: 135px;
+}
+.r_div>img{
+	position: absolute;
+	top: 136px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.Life_lt,.Life_rt{
+	width: 50%;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	top: 140px;
+}
+.Life_lt_div,.Life_rt_div{
+	width: 80%;
+	height: 100px;
+	margin: 90px auto;
+	position: relative;
+}
+.Life_rt{
+	left: 50%;
+}
+.Life_rt_div{
+	margin: 40px auto;
+}
+.Life_lt_div a,.Life_rt_div a{
+	position: absolute;
+	right: 60px;
+	line-height: 100%;
+	margin: 0;
+	font-size: 18px;
+	color: #000;
+}
+.Life_rt_div a{
+	right: auto;
+	left: 55px;
+}
+.Life_lt_div p,.Life_rt_div p{
+	font-size: 15px;
+	line-height: 120%;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	text-align: left;
+	letter-spacing: 3px;
+}
+.Life_rt_div p{
+	right: auto;
+	left: 55px;
+}
+.Life_lt_div div,.Life_rt_div div{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	font-size: 30px;
+	line-height: 100%;
+	border: 1px solid #333;
+}
+.Life_rt_div div{
+	right: auto;
+	left: 0;
+}
+.Life_lt_div div span,.Life_rt_div div span{
+	font-size: 13px;
+	line-height: 100%;
+	position: absolute;
+	bottom: 3px;
+	left: 5px;
 }
 
 /*SetSail*/
