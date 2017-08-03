@@ -10,6 +10,7 @@ html,body,.banner{
 }
 
 .swiper-slide {
+	padding-top: 50px;
 	line-height: 300px;
 	color: #fff;
 	font-size: 36px;
@@ -17,27 +18,181 @@ html,body,.banner{
 }
 .case{
 	width: 100%;
-	height: 300px;
+	height: 800px;
 	padding: 0 auto;
+}
+.swiper-pagination span{
+	display: inline;
+	width: 100px;
+	height: 30px;
+	border-radius: 10%;
+	font-size: 15px;
+	line-height: 30px;
+	background: transparent;
 }
 
 #Title{
-	background: #fff;
+	background: rgba(255,255,255,0.2);
 	border: none;
+}
+#Title a{
+	color: #000;
 }
 #Title_Underline{
 	width: auto;
-	height: 3px;
+	height: 1px;
 	background: #000;
 	margin-top: 40px;
-	transition: 0.5s;
+	transition: 0.3s;
 	position: fixed;
 	opacity: 0;
 }
 
+/*SetSail*/
+.SetSail{
+	background: url(../img/hire_bg.jpg);
+	position: relative;
+	color: #555;
+}
+.b_rt{
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,0.04);
+	position: absolute;
+	right: 0;
+}
+.SetSail_bi{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%)
+}
+.SetSail .container{
+	position: relative;
+}
+.SetSail h1{
+	position: absolute;
+	left: 0;
+	top: 150px;
+}
+.SetSail p{
+	width: 450px;
+	font-size: 17px;
+	line-height: 25px;
+	position: absolute;
+	left: 0;
+	top: 300px;
+	text-align: left;
+	text-indent:30px;
+}
+
+/*SetSail*/
+
+
+/*手风琴*/
+#wrap{
+	position: relative;
+	overflow: hidden;
+	top:0; left:0; right:0; bottom:0;
+	margin:auto;
+	width: 100%;
+	height: 100%;
+}
+#wrap > ul{
+	width: 120%;
+	height: 100%;
+	list-style: none;
+}
+#wrap > ul > li{
+	float: left;
+	width: 100px;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+#wrap > ul > li:nth-child(1){
+	background: url('../img/1.jpg') no-repeat center/cover;
+}
+#wrap > ul > li:nth-child(2){
+	background: url('../img/2.jpg') no-repeat center/cover;
+}
+#wrap > ul > li:nth-child(3){
+	background: url('../img/3.jpg') no-repeat center/cover;
+}
+#wrap > ul > li:nth-child(4){
+	background: url('../img/4.jpg') no-repeat center/cover;
+}	
+#wrap > ul > li > .text{
+	width: 100px;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+}
+#wrap > ul > li > .text p{
+	padding: 20px 40px;
+	font-family: 'Microsoft yahei';
+	color: #fff;
+	line-height: 1;
+	font-size: 18px;
+	writing-mode: tb-rl;
+}
+.wrap_rt{
+	width: calc(100% - 100px);
+	height: 100%;
+	position: absolute;
+	left: 100px;
+	top: 0;
+	overflow-x: hidden;
+}
+
+
+/*热门分享*/
+.slider1{background:#999;}
+.slider2{background:#999;}
+.slider3{background:#999;}
+.slider4{background:#999;}
+.slider5{background:#999;}
+
+.swiper_bottton{
+	width: 200px;
+	height: 50px;
+	border: 1px solid #666;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.0);
+	outline:none;
+	overflow: hidden;
+	text-align: center;
+	line-height: 60px;
+}
+.swiper_left{
+	position: absolute;
+	left: 20%;
+	z-index: 10;
+	bottom: 30px;
+}
+.swiper_right{
+	position: absolute;
+	right: 20%;
+	z-index: 10;
+	bottom: 30px;
+}
+.swiper_bottton span{
+	color: #fff
+}
+.b_C{
+	width: 5px;
+	height: 5px;
+	background: rgba(0,0,0,0.3);
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%)
+}
+/*热门分享*/
+/*手风琴*/
 
 
 
+/*播放器*/
 #w{
 	width: 980px;
 	margin: 0 auto;
@@ -254,3 +409,4 @@ html,body,.banner{
 	left: -7px;
 	bottom: -7px;
 }
+/*播放器*/
